@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ConjunctionActivity">
 
     <TextView
         android:id="@+id/Title"
@@ -76,75 +76,74 @@
 
     <EditText
         android:id="@+id/inputTrueTrue"
-        android:layout_width="114dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="124dp"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
         android:hint="@string/answer1"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
+        android:textAlignment="center"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
-        app:layout_constraintStart_toEndOf="@+id/textTrueTrue"
-        app:layout_constraintTop_toBottomOf="@+id/textAB" />
-
-    <EditText
-        android:id="@+id/inputTrueFalse"
-        android:layout_width="114dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="@string/answer1"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.587"
-        app:layout_constraintStart_toEndOf="@+id/textTrueFalse"
-        app:layout_constraintTop_toBottomOf="@+id/inputTrueTrue" />
-
-    <EditText
-        android:id="@+id/inputFalseTrue"
-        android:layout_width="114dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="28dp"
-        android:ems="10"
-        android:hint="@string/answer1"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
-        app:layout_constraintStart_toEndOf="@+id/textFalseTrue"
-        app:layout_constraintTop_toBottomOf="@+id/inputTrueFalse" />
-
-    <EditText
-        android:id="@+id/inputFalseFalse"
-        android:layout_width="114dp"
-        android:layout_height="46dp"
-        android:ems="10"
-        android:hint="@string/answer1"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
-        app:layout_constraintStart_toEndOf="@+id/textFalseFalse"
-        app:layout_constraintTop_toBottomOf="@+id/inputFalseTrue"
-        app:layout_constraintVertical_bias="0.221" />
+        app:layout_constraintBottom_toTopOf="@+id/inputTrueFalse"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textAB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginEnd="56dp"
         android:text="@string/a_b"
         android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputTrueTrue"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.569"
-        app:layout_constraintStart_toEndOf="@+id/textOptions"
-        app:layout_constraintTop_toBottomOf="@+id/Title" />
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <EditText
+        android:id="@+id/inputTrueFalse"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="@string/answer1"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputFalseTrue"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/inputFalseTrue"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="@string/answer1"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputFalseFalse"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/inputFalseFalse"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="116dp"
+        android:ems="10"
+        android:hint="@string/answer1"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:importantForAutofill="no" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
