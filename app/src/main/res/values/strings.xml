@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">MadLevel1Task2</string>
+    <string name="Title">Conjunction (AND)</string>
+    <string name="Cases">A&#160;&#160;&#160;&#160;&#160;B</string>
+    <string name="Case1">T&#160;&#160;&#160;&#160;&#160;T</string>
+    <string name="Case2">T&#160;&#160;&#160;&#160;&#160;F</string>
+    <string name="Case3">F&#160;&#160;&#160;&#160;&#160;T</string>
+    <string name="Case4">F&#160;&#160;&#160;&#160;&#160;F</string>
+    <string name="operation">A ^ B</string>
+    <string name="inputcase1">InputCase1</string>
+    <string name="inputcase4">InputCase4</string>
+    <string name="inputcase3">InputCase3</string>
+    <string name="inputcase2">InputCase2</string>
+    <string name="a_b">A ^ B</string>
+    <string name="answer1">Answer</string>
 </resources>
